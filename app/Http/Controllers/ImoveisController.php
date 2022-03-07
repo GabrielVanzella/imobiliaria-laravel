@@ -13,7 +13,7 @@ class ImoveisController extends Controller
      */
     public function index()
     {
-      echo 'Hello Word';
+      echo 'ImovelController metodo index';
     }
 
     /**
