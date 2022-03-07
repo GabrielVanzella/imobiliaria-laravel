@@ -23,7 +23,7 @@ class ImoveisController extends Controller
      */
     public function create()
     {
-        //
+        return view('imoveis.create', []);
     }
 
     /**
@@ -34,7 +34,14 @@ class ImoveisController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        if($_POST){
+            $titulo = $_POST["titulo"];
+            $descricao = $_POST["descricao"];
+            echo "O titulo digitado é: ". $titulo."<br>";
+            echo "A descricão é: ". $descricao."<br>";
+        }
+
+            exit;
     }
 
     /**
